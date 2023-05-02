@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "303685433048",
+    "project_id": "nexuscarepath-health-care-app",
+    "storage_bucket": "nexuscarepath-health-care-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303685433048:android:4c7baa916c1355c9f949ad",
+        "android_client_info": {
+          "package_name": "com.example.healthcareapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303685433048-0to3fv2nu2qm3ersiqd68q4qe2tjodoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZH8X9my4F_Tncm9NnWPAriE7r_UIKi9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303685433048-0to3fv2nu2qm3ersiqd68q4qe2tjodoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

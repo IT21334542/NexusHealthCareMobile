@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_text">48dp</dimen>
+    <dimen name="margin_username">12dp</dimen>
+    <dimen name="margin_password">12dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="btn_margintop">30dp</dimen>
+    <dimen name="popupheight">660px</dimen>
+    <dimen name="popupmargin">30dp</dimen>
+    <dimen name="qr_margin">30dp</dimen>
+    <dimen name="dash_logo_height">300dp</dimen>
+    <dimen name="add_medicine_storypic">300dp</dimen>
+
+
+</resources>

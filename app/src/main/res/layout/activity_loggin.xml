@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Loggin" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@mipmap/regularwwhite_foreground"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_marginTop="@dimen/margin_username"
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/username"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text"
+        android:layout_below="@id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/password"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/margin_password"
+
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin_password"
+        android:layout_marginTop="@dimen/btn_margintop"
+        android:layout_marginEnd="@dimen/margin_password"
+        android:backgroundTint="@color/background_palet1"
+        android:fontFamily="@font/titillium_web"
+        android:text="@string/login"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin_password"
+        android:layout_marginTop="@dimen/margin_password"
+        android:layout_marginEnd="@dimen/margin_password"
+        android:layout_marginBottom="@dimen/margin_password"
+        android:text="@string/noaccount"
+        android:textColor="@color/background_palet1"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

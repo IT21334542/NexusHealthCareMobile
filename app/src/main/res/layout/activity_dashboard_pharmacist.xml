@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardPharmacist"
+    android:background="@drawable/gradient_background_upsitedown">
+    <ImageView
+        android:id="@+id/dashLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dash_logo_height"
+        android:src="@mipmap/regularcolor_foreground"
+        android:layout_marginTop="-40dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:translationZ="3dp"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/popup_foreground" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:src="@mipmap/menu_icon_foreground"
+
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/round_rectangle"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgvieworders"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:background="@color/background_palet1"
+            android:elevation="10dp"
+            android:src="@mipmap/orders_card_foreground" />
+        <TextView
+            android:id="@+id/txtorders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/orders"
+            android:textAlignment="center"
+            android:textColor="@color/background_palet1"
+            android:layout_below="@id/imgvieworders"
+            android:layout_marginStart="50dp"
+            />
+            <ImageView
+                android:id="@+id/imgviewscanners"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/background_palet1"
+                android:elevation="10dp"
+                android:src="@mipmap/qrscanner_logo_foreground" />
+            <TextView
+                android:id="@+id/txtscanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgvieworders"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:text="@string/qr_scanner"
+                android:textAlignment="center"
+                android:textColor="@color/background_palet1"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_rectangle"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/medi1"
+                android:layout_width="180dp"
+                android:layout_height="1500dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/background_palet1"
+                android:src="@mipmap/medicine_one_foreground"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/medi2"
+                android:layout_width="180dp"
+                android:layout_height="1500dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/background_palet1"
+                android:src="@mipmap/medicine_two_foreground"
+                android:textAlignment="center"
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    
+
+
+</RelativeLayout>

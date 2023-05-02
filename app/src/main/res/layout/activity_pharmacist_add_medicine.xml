@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_upsitedown"
+    tools:context=".PharmacistMedicine">
+
+    <ImageView
+        android:id="@+id/imgviewaddmedicine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_medicine_storypic"
+        android:src="@mipmap/add_medicine_foreground"
+        />
+    <EditText
+        android:layout_marginTop="@dimen/margin_username"
+        android:id="@+id/etmediname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text"
+        android:layout_below="@id/imgviewaddmedicine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/medicine_name"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_marginTop="@dimen/margin_username"
+        android:id="@+id/stmediprice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text"
+        android:layout_below="@id/etmediname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Medicine Price"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/imageviewaddpreview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/stmediprice"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/background_palet1"
+        android:src="@mipmap/add_medicine_image_foreground" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stmediprice"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="ADD A CLEAR PREVIEW OF THE MEDICINE"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageviewaddpreview"
+        android:layout_centerHorizontal="true"
+        android:text="ADD MEDICINE"
+        android:textSize="18sp"
+        android:textColor="@color/background_palet1"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"/>
+</RelativeLayout>

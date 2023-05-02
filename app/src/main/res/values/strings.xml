@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NexusCarePath</string>
+    <string name="applicationName">NexusCarePath</string>
+    <string name="username">Enter User Name</string>
+    <string name="password">Enter Password</string>
+    <string name="login">Log in</string>
+    <string name="noaccount">Do not have account</string>
+    <string name="orders">Orders</string>
+    <string name="qr_scanner">QR scanner</string>
+    <string name="medicine_name">Medicine Name</string>
+</resources>
