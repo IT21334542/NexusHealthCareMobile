@@ -8,4 +8,15 @@
     <string name="orders">Orders</string>
     <string name="qr_scanner">QR scanner</string>
     <string name="medicine_name">Medicine Name</string>
+    <string name="add_medicine">ADD MEDICINE</string>
+    <string name="order_history">Order History</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_products">My Products</string>
+    <string name="medicine_1">Medicine 1</string>
+    <string name="medicine_nameer">Medicine Name</string>
+    <string name="medicine_price">Medicine Price</string>
+    <string name="_400_00_lkr">400.00 LKR</string>
+    <string name="soldout">SoldOut</string>
+    <string name="visible">Visible</string>
+    <string name="delete_product">Delete Product</string>
 </resources>
