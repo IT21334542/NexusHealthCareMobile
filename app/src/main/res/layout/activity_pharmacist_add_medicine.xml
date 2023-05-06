@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background_upsitedown"
-    tools:context=".PharmacistMedicine">
+    android:id="@+id/rl"
+    tools:context=".Pharmacist_addMedicine">
 
     <ImageView
         android:id="@+id/imgviewaddmedicine"
@@ -69,13 +70,28 @@
         android:textSize="18sp" />
 
     <Button
+        android:id="@+id/addtoDB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageviewaddpreview"
         android:layout_centerHorizontal="true"
-        android:text="ADD MEDICINE"
+        android:text="@string/add_medicine"
         android:textSize="18sp"
         android:textColor="@color/background_palet1"
         android:backgroundTint="@color/white"
         android:elevation="5dp"/>
+
+    <ProgressBar
+        android:id="@+id/uploadProgress"
+        style="@android:style/Widget.Material.Light.ProgressBar.Large.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@android:drawable/divider_horizontal_textfield" />
+
+    <ImageView
+        android:id="@+id/homebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/homeicon_foreground" />
 </RelativeLayout>
