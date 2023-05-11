@@ -32,7 +32,8 @@ class RecyclerviewAdaptor(mcontact:Context,username:String): RecyclerView.Adapte
         return viewH(v)
     }
 
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int
+    {
         return medicineList.size
     }
 

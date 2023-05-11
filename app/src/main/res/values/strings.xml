@@ -19,4 +19,5 @@
     <string name="soldout">SoldOut</string>
     <string name="visible">Visible</string>
     <string name="delete_product">Delete Product</string>
+    <string name="session_time_out">Session_Time_Out</string>
 </resources>

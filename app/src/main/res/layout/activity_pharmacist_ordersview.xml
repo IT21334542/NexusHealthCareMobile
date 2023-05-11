@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pharmacist_Ordersview"
+    android:background="@drawable/gradient_background"
+    android:paddingTop="30dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/active_orders_cards_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="@color/zxing_transparent"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Active Orders"
+            android:fontFamily="@font/titillium_web"
+            android:layout_margin="20dp"
+            android:id="@+id/txt_active_orders"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_active_orders"
+                android:layout_below="@id/txt_active_orders"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/active_past_cards_container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:backgroundTint="@color/zxing_transparent"
+        android:layout_below="@id/active_orders_cards_container">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="Past Orders"
+                android:fontFamily="@font/titillium_web"
+                android:layout_margin="20dp"
+                android:id="@+id/txt_past_orders"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_past_orders"
+                android:layout_below="@id/txt_past_orders"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

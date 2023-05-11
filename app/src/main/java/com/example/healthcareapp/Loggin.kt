@@ -10,6 +10,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import com.google.firebase.database.DataSnapshot
@@ -31,6 +32,7 @@ class Loggin<K:String,T : Any,Q:Any> : AppCompatActivity() {
     var count =0
     var valid =0
     var validname=""
+    lateinit var sign:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -42,10 +44,18 @@ class Loggin<K:String,T : Any,Q:Any> : AppCompatActivity() {
         Etpass=findViewById(R.id.etPassword)
         Etpass.visibility=View.GONE
         btnlog.visibility=View.VISIBLE
-
+        sign=findViewById(R.id.txtSignup)
+        //notHave.visibility=View.VISIBLE
+        sign.visibility=View.VISIBLE
         DataName=""
         DataPass=""
         println("from ground"+Etname.text.toString())
+
+
+        sign.setOnClickListener(View.OnClickListener {
+            //val in:Intent=Intent(this@Loggin,Signup::class.java)
+            //startActivity(in)
+        })
 
 
 
@@ -70,6 +80,8 @@ class Loggin<K:String,T : Any,Q:Any> : AppCompatActivity() {
                         {
                             valid=1
                             Etname.visibility=View.GONE
+                            //notHave.visibility=View.GONE
+                            sign.visibility=View.GONE
                             Etpass.visibility=View.VISIBLE
                             btnlog.text="Login"
 

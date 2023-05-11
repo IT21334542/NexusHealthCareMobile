@@ -13,6 +13,7 @@ class DashboardPharmacist : AppCompatActivity() {
     lateinit var btnQr:ImageView
     lateinit var menubtn:ImageView
     lateinit var username:String
+    lateinit var btn_Orders:ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +44,12 @@ class DashboardPharmacist : AppCompatActivity() {
             startActivity(divetor)
         })
 
+        btn_Orders.setOnClickListener(View.OnClickListener {
+            var divetor:Intent=Intent(this@DashboardPharmacist,Pharmacist_Ordersview::class.java)
+            divetor.putExtra("UN",username)
+            startActivity(divetor)
+        })
+
 
 
     }
@@ -50,6 +57,7 @@ class DashboardPharmacist : AppCompatActivity() {
     private fun initalls()
     {
         menubtn=findViewById(R.id.menuids)
+        btn_Orders=findViewById(R.id.imgvieworders)
 
     }
 }

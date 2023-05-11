@@ -19,6 +19,18 @@
         android:theme="@style/Theme.HealthCareApp"
         tools:targetApi="31">
         <activity
+            android:name=".Orderbrief"
+            android:exported="false" />
+        <activity
+            android:name=".Seesion_Error"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDbHandler"
+            android:exported="false" />
+        <activity
+            android:name=".Pharmacist_Ordersview"
+            android:exported="false" />
+        <activity
             android:name=".Pharmacist_Myproducts"
             android:exported="false" />
         <activity
