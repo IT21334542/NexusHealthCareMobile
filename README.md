@@ -1,5 +1,5 @@
 # NexusHealthCareMobile
-platform that connects the Pharmacist and the Products buyer at one place and achieve their own requirement 
+platform that connects the Pharmacist and the Products buyer at one place and achieve their own requirements are expected
 
 
 # Application Name
